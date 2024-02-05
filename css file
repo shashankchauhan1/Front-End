@@ -1,9 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <link rel="icon" type="img/x-icon"
-        href="https://www.magezon.com/pub/media/catalog/product/cache/222e86b9f1a4648ea7f95f462483bdc8/c/o/countdown_timer.png.jpg">
     <style>
         * {
             margin: 0;
@@ -199,4 +193,3 @@
             box-shadow: 1px 1px 3px black;
         }
     </style>
-</head>
