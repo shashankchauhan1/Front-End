@@ -1,0 +1,99 @@
+// resistration page full code.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220112/pngtree-glass-morphim-effect-registration-banner-with-gradient-blue-image_934693.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: violet;
+        }
+
+        .h1 {
+            color: purple;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .m {
+            color: black;
+            text-transform: capitalize;
+        }
+
+        .h2 {
+            color: purple;
+            text-transform: capitalize;
+        }
+
+        .n {
+            color: black;
+        }
+
+        .h21 {
+            color: purple;
+            text-transform: capitalize;
+        }
+
+        .h31 {
+            color: deeppink;
+        }
+
+        .lp {
+            position: absolute;
+            top: 100px;
+            left: 550px;
+        }
+
+        .btn {
+            float: right;
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1"><b><u>resistration form</u></b></h1><br>
+    <div class="lp">
+        <div class="m">
+            <input type="text" placeholder="name">enter your name<br><br>
+            <input type="text" placeholder="xxxx-xxxx-xxxx">enter your aadhar no.<br><br>
+            <input type="text" placeholder="abc@gmail.com">enter your e-mail<br><br>
+            <input type="text" placeholder="city">enter your city<br><br>
+            <input type="text" placeholder="100001">zip code<br><br>
+            <input type="number" placeholder="xx">enter your age<br><br>
+            <input type="date">enter date of registration<br><br>
+        </div><br>
+        <h2 class="h2"><u>select your language</u></h2><br>
+        <div class="n">
+            <label for="language">
+                <input type="checkbox">hindi
+                <input type="checkbox">english
+                <input type="checkbox">other
+            </label>
+        </div><br>
+        <h2 class="h21">select other specification</h2><br>
+        <h3 class="h31">mobile number
+            <select name="phone no." id="">
+                <option value="91">+91</option>
+                <option value="+1">+1</option>
+            </select>
+        </h3><br>
+        <input type="text" placeholder="enter your mobile no.">
+        <br><br>
+        <button class="btn"><a href="shashank2.html">SUBMIT</a></button>
+    </div>
+</body>
+
+</html>
