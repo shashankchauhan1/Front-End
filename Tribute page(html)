@@ -1,0 +1,50 @@
+<body>
+    <!-- photo and name -->
+    <div class="cont">
+        <img src="https://miro.medium.com/v2/resize:fit:952/1*F71zdhLP6JMJvpTdwZ8adw.jpeg" alt="apj abdul kalam"
+            class="apj">
+        <div class="name"><b>15.10.1931 - 27.7.2015</b></div>
+    </div>
+    <!-- about  -->
+    <div class="about">
+        <h3>A.P.J. Abdul Kalam, renowned as the "Missile Man of India," was a distinguished scientist and the 11th
+            President of India (2002-2007). Born on October 15, 1931, in Rameswaram, Tamil Nadu, he spearheaded
+            India's
+            missile and nuclear weapons programs. His contributions include the development of the Satellite Launch
+            Vehicle (SLV-III) and advancements in ballistic missile technology. Despite his prestigious roles, Kalam
+            maintained humility and a passion for inspiring youth, advocating for science education and innovation.
+            His
+            simplicity and dedication endeared him to the nation. Even after his presidency, Kalam continued to
+            champion
+            education and authored bestselling books, leaving a lasting legacy worldwide.</h3>
+    </div>
+    <!-- "Biographical Information -->
+    <div class="specs">
+        <h2>Biographical Information</h2>
+        <ul>
+            <li>Birthplace: Rameswaram, Tamil Nadu, India.</li>
+            <li>Date of Birth: October 15, 1931</li>
+            <li>Date of Death: July 27, 2015</li>
+            <h3><b>Education:</b></h3>
+            <li>Bachelor of Science in Physics from St. Joseph's College, Tiruchirappalli.</li>
+            <li>Aerospace Engineering from Madras Institute of Technology.</li>
+            <li>Doctorate in Aerospace Engineering from the University of Edinburgh, UK.</li>
+        </ul>
+    </div>
+    <div class="ach">
+        <h2>Achievements:</h2>
+        <ul>
+            <li>Earned the title "Missile Man of India."</li>
+            <li>Developed India's first indigenous Satellite Launch Vehicle (SLV-III).</li>
+            <li>Played a pivotal role in advancing ballistic missile technology.</li>
+            <li>Served as the 11th President of India from 2002 to 2007.</li>
+            <li>Authored several books, including "Wings of Fire" and "Ignited Minds".</li>
+            <li>Honored with prestigious accolades including the Bharat Ratna, Padma Bhushan, and Padma Vibhushan.
+            </li>
+        </ul>
+    </div>
+    <div class="more">
+        <h4>Explore additional details about A.P.J. Abdul Kalam's life on <a
+                href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"><u>Wikipedia</u></a></h4>
+    </div>
+</body>
