@@ -1,1 +1,39 @@
-
+<body>
+    <div class="text"><b></b></div>
+    <!-- // front -->
+    <div class="cont1" onclick="togglePosition()">
+     
+        <img src="https://img.goodfon.com/original/1920x1080/4/e7/bmw-m8-smoke-front-view-ai-art-wallpaper-bmw-picture.jpg"
+            alt="m8" class="frontimg">
+     
+        <div class="name"><b>
+                <h2><u>bmw m8</u></h2>
+            </b></div>
+    
+        <div class="about">
+            
+            BMW, a German luxury automaker, renowned for its performance and innovation, was founded in 1916. The BMW M
+            Series, born from motorsport heritage, epitomizes high-performance driving with models like the M3, M5, and
+            M8. Each M car combines precision engineering, dynamic handling, and luxurious comfort for exhilarating
+            driving experiences.
+        </div>
+    </div>
+    <!-- // reverse  -->
+    <div class="cont2">
+        <img src="https://wallpapercave.com/wp/wp10089768.jpg" alt="back of m8" class="revimg">
+        <div class="specs">
+            <ul>
+                <li>4.4-liter TwinPower Turbo V8 engine.</li><br>
+                <li>0-100 mph in 3.1 seconds.</li><br>
+                <li>Advanced M xDrive all-wheel-drive system.</li><br>
+                <li>Luxurious interior with cutting-edge technology and comfort features.</li><br>
+                <li>Sleek and aerodynamic design for enhanced performance.</li><br>
+            </ul>
+        </div>
+    </div>
+    <script>
+    function togglePosition() {
+        var cont1 = document.querySelector('.cont1');
+        cont1.classList.toggle('left');
+    }</script>
+</body>
