@@ -1,1 +1,23 @@
-apple landing page(html)
+// apple landing page(html)
+
+<body>
+    <header class="head">
+        <img class="logo" src="https://static.vecteezy.com/system/resources/previews/017/221/775/non_2x/apple-logo-free-png.png" alt="">
+        <nav class="navs">
+            <ul class="navs">
+            <li class="navss">HOME</li>
+            <li class="navss">FEATURED</li>
+            <li class="navss">PRODUCT</li>
+            <li class="navss">EXPLORE</li>
+            <li class="navss">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <a href="https://amzn.in/d/fQ26EHI"><img src="https://media.a1.bg/newsite2018/private/iPhone-15/iphone-15-pro-prod-natural.png" alt="" class="fimg"></a>
+    <img src="https://cdn.vodafone.co.uk/en/assets/images/desktop/Apple_iPhone_14_Pro_Max_deep_purple-full-product-front-600.png" alt="" class="simg">
+    <img src="https://media.secure-mobiles.com/idmobile/apple/iphone-15/titanium-iphone-15-pro-wordmark-large.png" alt="" class="cimg">
+    <a href="https://amzn.in/d/fQ26EHI">
+    <button class="btn1"><b>Buy</b></button></a>
+    <a href="https://www.apple.com/in/">
+    <button class="btn2"><b>Read More</b></button></a>
+</body>
