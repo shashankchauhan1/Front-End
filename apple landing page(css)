@@ -1,2 +1,193 @@
 // apple landing page(css)
 
+
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(60, 57, 60);
+        }
+        .head{
+            box-shadow: 0px 0px 2px 0px rgb(92, 84, 84);
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+            filter: drop-shadow(2px 2px 10px #e0cede);
+        }
+        .navs{
+            margin: 4% 4% 4% 4%;
+            display: inline;
+        }
+        .navss{
+            color: snow;
+            margin: 3% 3% 3% 3%;
+            display: inline;
+            height: 5%;
+            width: 100%; 
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            text-shadow: 2px 2px 10px #e3d7e2;
+        }
+        .fimg{
+            position: absolute;
+            top: 25%;
+            left: 0%;
+            height: 55%;
+            width: 32%;
+            filter: drop-shadow(2px 2px 10px #cece6c);
+            animation-name: fimg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            transition: all;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in;
+            z-index: 2;
+        }
+        @keyframes fimg {
+            0%{
+                position: absolute;
+                top: 15%;
+                left: 0%;
+            }
+            100%{
+                position: absolute;
+                top: 25%;
+                left: 0%;
+            }
+        }
+        .fimg:hover{
+            top: 10%;
+        }
+        .about{
+            position: absolute;
+            top: 63%;
+            left: 5.8%;
+            height: 50%;
+            width: 23%;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 10px #e3d7e2;
+            font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            
+        }
+        .simg{
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            height: 60%;
+            width: 20%;
+            filter: drop-shadow(1px 1px 10px rgb(113, 28, 130));
+            animation-name: simg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        @keyframes simg {
+            0%{
+                position: absolute;
+                top: 20%;
+                right: 0%;
+            }
+            100%{
+                position: absolute;
+                top: 20%;
+                right: 5%;
+            }
+        }
+        
+        .cimg{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            height: 15%;
+            width: 25%;
+            filter: drop-shadow(1px 1px 10px rgb(204, 212, 199));
+            animation-name: cimg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: .5s;
+            
+        }
+        @keyframes cimg {
+            0%{
+                position: absolute;
+                top: 40%;
+                right: 30%;
+            }
+            100%{
+                position: absolute;
+                top: 30%;
+                right: 30%;
+            }
+        }
+        
+        .btn1{
+            border: 2px solid #de58cd;
+            border-radius: 35%;
+            position: absolute;
+            top: 65%;
+            left: 35%;
+            width: 8%;
+            height: 5%;
+            background-color: #de58cd;
+            animation-name: btn1;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
+        @keyframes btn1 {
+            0%{
+                filter: blur(10px);
+                background-color: #de58cd;
+                position: absolute;
+                top: 65%;
+                left: 55%;
+            }
+            50%{
+                filter: blur(5px);
+                background-color: #de58cd;
+            }
+            100%{
+                background-color: #de58cd;
+                filter: blur(0px);
+            }
+        }
+        .btn2{
+            border: 2px solid #de58cd;
+            background-color: #de58cd;
+            border-radius: 35%;
+            position: absolute;
+            top: 65%;
+            left: 55%;
+            width: 8%;
+            height: 5%;
+            animation-name: btn2;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
+        @keyframes btn2 {
+            0%{
+                filter: blur(10px);
+                background-color: #de58cd;
+                position: absolute;
+                top: 65%;
+                left: 35%;
+            }
+            50%{
+                filter: blur(5px);
+                background-color: #de58cd;
+            }
+            100%{
+                background-color: #de58cd;
+                filter: blur(0px);
+            }
+        }
+        
+
+    </style>
