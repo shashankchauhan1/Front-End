@@ -1,1 +1,199 @@
-apple landing page full code
+// apple landing page full code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple 🍎</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(235, 154, 243);
+        }
+        .head{
+            box-shadow: 0px 0px 2px 0px rgb(92, 84, 84);
+        }
+        .logo{
+            width: 5%;
+            height: 5%;
+            filter: drop-shadow(2px 2px 10px #de58cd);
+        }
+        .navs{
+            margin: 4% 4% 4% 4%;
+            display: inline;
+        }
+        .navss{
+            margin: 3% 3% 3% 3%;
+            display: inline;
+            height: 5%;
+            width: 100%; 
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            text-shadow: 2px 2px 10px #de58cd;
+        }
+        .fimg{
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            height: 45%;
+            width: 25%;
+            filter: drop-shadow(2px 2px 10px #f0e580);
+            animation-name: fimg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        @keyframes fimg {
+            0%{
+                position: absolute;
+                top: 25%;
+                left: 0%;
+            }
+            100%{
+                position: absolute;
+                top: 25%;
+                left: 5%;
+            }
+        }
+        .simg{
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            height: 60%;
+            width: 20%;
+            filter: drop-shadow(1px 1px 10px rgb(113, 28, 130));
+            animation-name: simg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        @keyframes simg {
+            0%{
+                position: absolute;
+                top: 20%;
+                right: 0%;
+            }
+            100%{
+                position: absolute;
+                top: 20%;
+                right: 5%;
+            }
+        }
+        .cimg{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            height: 25%;
+            width: 35%;
+            filter: drop-shadow(1px 1px 10px rgb(201, 62, 182));
+            animation-name: cimg;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: .5s;
+            
+        }
+        @keyframes cimg {
+            0%{
+                position: absolute;
+                top: 40%;
+                right: 30%;
+            }
+            100%{
+                position: absolute;
+                top: 30%;
+                right: 30%;
+            }
+        }
+        .btn1{
+            border: 2px solid #de58cd;
+            border-radius: 35%;
+            position: absolute;
+            top: 65%;
+            left: 35%;
+            width: 8%;
+            height: 5%;
+            background-color: #de58cd;
+            animation-name: btn1;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
+        @keyframes btn1 {
+            0%{
+                filter: blur(10px);
+                background-color: #de58cd;
+                position: absolute;
+                top: 65%;
+                left: 55%;
+            }
+            50%{
+                filter: blur(5px);
+                background-color: #de58cd;
+            }
+            100%{
+                background-color: #de58cd;
+                filter: blur(0px);
+            }
+        }
+        .btn2{
+            border: 2px solid #de58cd;
+            background-color: #de58cd;
+            border-radius: 35%;
+            position: absolute;
+            top: 65%;
+            left: 55%;
+            width: 8%;
+            height: 5%;
+            animation-name: btn2;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
+        @keyframes btn2 {
+            0%{
+                filter: blur(10px);
+                background-color: #de58cd;
+                position: absolute;
+                top: 65%;
+                left: 35%;
+            }
+            50%{
+                filter: blur(5px);
+                background-color: #de58cd;
+            }
+            100%{
+                background-color: #de58cd;
+                filter: blur(0px);
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <img class="logo" src="https://static.vecteezy.com/system/resources/previews/017/221/775/non_2x/apple-logo-free-png.png" alt="">
+        <nav class="navs">
+            <ul class="navs">
+            <li class="navss">HOME</li>
+            <li class="navss">FEATURED</li>
+            <li class="navss">PRODUCT</li>
+            <li class="navss">EXPLORE</li>
+            <li class="navss">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <a href="https://amzn.in/d/fQ26EHI"><img src="https://media.a1.bg/newsite2018/private/iPhone-15/iphone-15-pro-prod-natural.png" alt="" class="fimg"></a>
+    <img src="https://cdn.vodafone.co.uk/en/assets/images/desktop/Apple_iPhone_14_Pro_Max_deep_purple-full-product-front-600.png" alt="" class="simg">
+    <img src="https://media.secure-mobiles.com/idmobile/apple/iphone-15/titanium-iphone-15-pro-wordmark-large.png" alt="" class="cimg">
+    <a href="https://amzn.in/d/fQ26EHI">
+    <button class="btn1"><b>Buy</b></button></a>
+    <a href="https://www.apple.com/in/">
+    <button class="btn2"><b>Read More</b></button></a>
+</body>
+</html>
