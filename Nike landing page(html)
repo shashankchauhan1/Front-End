@@ -1,1 +1,26 @@
 // Nike landing page(html)
+
+<body>
+    <header class="head">
+        <img class="logo" src="https://www.edigitalagency.com.au/wp-content/uploads/Nike-logo-png-white.png" alt="">
+        <nav class="navs">
+            <ul class="navs">
+                <li class="navss white">HOME</li>
+                <li class="navss white">FEATURED</li>
+                <li class="navss black">PRODUCT</li>
+                <li class="navss black">EXPLORE</li>
+                <li class="navss black">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box"></div>
+    <img src="https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com_.png" alt="" class="image">
+
+    <div class="text"><h2>Nike Air Max<h2></div>
+
+    <!-- <div class="about"> -->
+        <h4 class="about">Nike Air Max shoes expertly blend responsive cushioning, sleek design, and innovative technology for exceptional running performance and comfort.</h4></div>
+
+        <button class="btn"><b>Buy Now</b></button>
+        <div class="price"><h2>₹18500.00</h2></div>
+</body>
