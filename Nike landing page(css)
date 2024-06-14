@@ -1,1 +1,213 @@
 // nike landing page css
+
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        .box {
+            background-color: rgb(6, 19, 38);
+            border-radius: 0% 60% 0% 0%;
+            position: absolute;
+            top: 0;
+            width: 70vw;
+            height: 100vh;
+            z-index: 0;
+        }
+
+        .head {
+            box-shadow: 0px 0px 2px 0px rgb(92, 84, 84);
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+        }
+
+        .logo {
+            width: 10%;
+            height: 10%;
+            filter: drop-shadow(2px 2px 8px #b7b7b7);
+            z-index: 1;
+        }
+
+        .navs {
+            margin: 6% 6% 6% 6%;
+            display: inline;
+            z-index: 1;
+        }
+
+        .navss {
+            /* color: snow; */
+            margin: 3% 3% 3% 3%;
+            display: inline;
+            height: 5%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .white {
+            color: white;
+            text-shadow: 2px 2px 10px rgb(255, 252, 252);
+        }
+
+        .black {
+            color: black;
+            text-shadow: 2px 2px 10px rgb(170, 165, 165);
+        }
+
+        .image {
+            width: 45%;
+            height: 85%;
+            z-index: 4;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            filter: drop-shadow(1px 1px 10px rgb(0, 145, 255));
+            animation-name: nike;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes nike {
+            0% {
+                top: 15%;
+                left: 55%;
+            }
+
+            100% {
+                top: 15%;
+                left: 50%;
+            }
+        }
+
+        .text {
+            color: rgb(60, 231, 211);
+            z-index: 4;
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            text-transform: capitalize;
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            text-shadow: 2px 2px 10px rgb(40, 32, 163);
+            animation-name: text;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes text {
+            0% {
+                top: 25%;
+                left: 15%;
+            }
+
+            100% {
+                top: 25%;
+                left: 20%;
+            }
+        }
+
+        .about {
+            color: rgb(191, 231, 60);
+            z-index: 4;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            text-transform: capitalize;
+            /* font-style: bold; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-shadow: 2px 2px 10px rgb(40, 32, 163);
+            width: 55%;
+            height: 15%;
+            animation-name: about;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes about {
+            0% {
+                top: 40%;
+                left: 1%;
+            }
+
+            100% {
+                top: 40%;
+                left: 5%;
+            }
+        }
+
+        .btn {
+            width: 10%;
+            height: 5%;
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            z-index: 5;
+            border: 1px solid black;
+            border-radius: 35%;
+            cursor: pointer;
+            background-color: #5483c9;
+            transition: all;
+            transition-duration: .5s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+            animation-name: btn;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        .btn:hover {
+            width: 10.5%;
+            height: 5.5%;
+            background-color: aliceblue;
+            color: rgb(4, 1, 10);
+        }
+
+        @keyframes btn {
+            0% {
+                top: 60%;
+                left: 25%;
+            }
+
+            100% {
+                top: 60%;
+                left: 10%;
+            }
+        }
+
+        .price {
+            color: white;
+            z-index: 4;
+            position: absolute;
+            top: 60.5%;
+            left: 25%;
+            animation-name: price;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes price {
+            0% {
+                top: 60%;
+                left: 10%;
+            }
+
+            100% {
+                top: 60.5%;
+                left: 25%;
+            }
+        }
+    </style>
