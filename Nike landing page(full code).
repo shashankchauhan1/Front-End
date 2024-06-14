@@ -1,2 +1,254 @@
 // nike landing page full code
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        .box {
+            background-color: rgb(6, 19, 38);
+            border-radius: 0% 60% 0% 0%;
+            position: absolute;
+            top: 0;
+            width: 70vw;
+            height: 100vh;
+            z-index: 0;
+        }
+
+        .head {
+            box-shadow: 0px 0px 2px 0px rgb(92, 84, 84);
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+        }
+
+        .logo {
+            width: 10%;
+            height: 10%;
+            filter: drop-shadow(2px 2px 8px #b7b7b7);
+            z-index: 1;
+        }
+
+        .navs {
+            margin: 6% 6% 6% 6%;
+            display: inline;
+            z-index: 1;
+        }
+
+        .navss {
+            /* color: snow; */
+            margin: 3% 3% 3% 3%;
+            display: inline;
+            height: 5%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .white {
+            color: white;
+            text-shadow: 2px 2px 10px rgb(255, 252, 252);
+        }
+
+        .black {
+            color: black;
+            text-shadow: 2px 2px 10px rgb(170, 165, 165);
+        }
+
+        .image {
+            width: 45%;
+            height: 85%;
+            z-index: 4;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            filter: drop-shadow(1px 1px 10px rgb(0, 145, 255));
+            animation-name: nike;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes nike {
+            0% {
+                top: 15%;
+                left: 55%;
+            }
+
+            100% {
+                top: 15%;
+                left: 50%;
+            }
+        }
+
+        .text {
+            color: rgb(60, 231, 211);
+            z-index: 4;
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            text-transform: capitalize;
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            text-shadow: 2px 2px 10px rgb(40, 32, 163);
+            animation-name: text;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes text {
+            0% {
+                top: 25%;
+                left: 15%;
+            }
+
+            100% {
+                top: 25%;
+                left: 20%;
+            }
+        }
+
+        .about {
+            color: rgb(191, 231, 60);
+            z-index: 4;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            text-transform: capitalize;
+            /* font-style: bold; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-shadow: 2px 2px 10px rgb(40, 32, 163);
+            width: 55%;
+            height: 15%;
+            animation-name: about;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes about {
+            0% {
+                top: 40%;
+                left: 1%;
+            }
+
+            100% {
+                top: 40%;
+                left: 5%;
+            }
+        }
+
+        .btn {
+            width: 10%;
+            height: 5%;
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            z-index: 5;
+            border: 1px solid black;
+            border-radius: 35%;
+            cursor: pointer;
+            background-color: #5483c9;
+            transition: all;
+            transition-duration: .5s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+            animation-name: btn;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        .btn:hover {
+            width: 10.5%;
+            height: 5.5%;
+            background-color: aliceblue;
+            color: rgb(4, 1, 10);
+        }
+
+        @keyframes btn {
+            0% {
+                top: 60%;
+                left: 25%;
+            }
+
+            100% {
+                top: 60%;
+                left: 10%;
+            }
+        }
+
+        .price {
+            color: white;
+            z-index: 4;
+            position: absolute;
+            top: 60.5%;
+            left: 25%;
+            animation-name: price;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes price {
+            0% {
+                top: 60%;
+                left: 10%;
+            }
+
+            100% {
+                top: 60.5%;
+                left: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <img class="logo" src="https://www.edigitalagency.com.au/wp-content/uploads/Nike-logo-png-white.png" alt="">
+        <nav class="navs">
+            <ul class="navs">
+                <li class="navss white">HOME</li>
+                <li class="navss white">FEATURED</li>
+                <li class="navss black">PRODUCT</li>
+                <li class="navss black">EXPLORE</li>
+                <li class="navss black">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box"></div>
+    <img src="https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com_.png" alt="" class="image">
+
+    <div class="text">
+        <h2>Nike Air Max<h2>
+    </div>
+
+    <!-- <div class="about"> -->
+    <h4 class="about">Nike Air Max shoes expertly blend responsive cushioning, sleek design, and innovative technology
+        for exceptional running performance and comfort.</h4>
+    </div>
+
+    <button class="btn"><b>Buy Now</b></button>
+    <div class="price">
+        <h2>₹18500.00</h2>
+    </div>
+</body>
+
+</html>
