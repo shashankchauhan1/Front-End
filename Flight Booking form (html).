@@ -1,1 +1,170 @@
 // Flight Booking form (html).
+
+
+<fieldset style="width: 50%; margin: 0px 25%;">
+        <legend>Flight Booking Site</legend>
+        <form action="">
+            <label for="name">
+                <h3>Passenger Name</h3>
+            </label>
+            <input type="text" name="name" placeholder="First Name" size="30">
+            <input type="text" name="name" placeholder="Last Name" size="30">
+            <br>
+
+            <label for="dob">
+                <h3>Date of Birth</h3>
+            </label>
+            <input type="date" name="dob" placeholder="DD-MM-YYYY">
+            <br>
+
+            <label for="cp">
+                <h3>Contact Person</h3>
+            </label>
+            <input type="text" name="cp" placeholder="First Name" size="30">
+            <input type="text" name="cp" placeholder="Last Name" size="30">
+            <br>
+
+            <label for="email">
+                <h3>E-mail</h3>
+            </label>
+            <input type="email" name="email" placeholder="abc@example.com" size="30">
+            <br>
+
+            <label for="phone">
+                <h3>Phone</h3>
+            </label>
+            <input type="number" name="phone" placeholder="**********">
+            <br>
+
+            <label for="address">
+                <h3>Address</h3>
+            </label>
+            <input type="text" placeholder="Street Address" size="100"><br><br>
+            <input type="text" placeholder="Street Address Line 2" size="100"><br><br>
+            <input type="text" placeholder="City" size="45">
+            <input type="text" placeholder="Region" size="45"><br><br>
+            <input type="number" placeholder="Pin / ZipCode" size="50" style="margin: 0% 25% 0% 0%;">
+
+            <select id="country" name="country">
+                <option value="" selected>Select Your country</option>
+                <option value="EG">Egypt</option>
+                <option value="ZA">South Africa</option>
+                <option value="NG">Nigeria</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="RS">Russia</option>
+                <option value="JP">Japan</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="BR">Brazil</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="AQ">Antarctica</option>
+            </select>
+
+            <label for="ddate">
+                <h3>Departure Date</h3>
+            </label>
+            <input type="date" name="ddate" placeholder="DD/MM/YYYY" size="100">
+
+
+            <label for="dtime">
+                <h3>Departure Time</h3>
+            </label>
+            <input type="time" name="dtime" placeholder="HH:MM AM" size="100">
+            <br>
+
+
+            <label for="rdate">
+                <h3>Return Date</h3>
+            </label>
+            <input type="date" name="rdate" placeholder="DD/MM/YYYY" size="100">
+            <br>
+
+            <label for="rtime">
+                <h3>Return Time</h3>
+            </label>
+            <input type="time" name="rtime" placeholder="HH:MM AM" size="100">
+            <br>
+
+            <label for="df">
+                <h3>Departing from</h3>
+            </label>
+            <input type="text" name="df" placeholder="city" size="50">
+
+            <select id="country" name="country">
+                <option value="" selected>Select Departing country</option>
+                <option value="EG">Egypt</option>
+                <option value="ZA">South Africa</option>
+                <option value="NG">Nigeria</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="RS">Russia</option>
+                <option value="JP">Japan</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="BR">Brazil</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="AQ">Antarctica</option>
+            </select>
+
+            <label for="dg">
+                <h3>Designation</h3>
+            </label>
+            <input type="text" name="dg" placeholder="city" size="50">
+
+            <select id="country" name="country">
+                <option value="" selected>Select Designation</option>
+                <option value="EG">Egypt</option>
+                <option value="ZA">South Africa</option>
+                <option value="NG">Nigeria</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="RS">Russia</option>
+                <option value="JP">Japan</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="BR">Brazil</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="AQ">Antarctica</option>
+            </select>
+
+            <br><br>
+            <label for="airline">
+                <h3>Airline </h3>
+            </label>
+            <select id="airline" name="airline">
+                <option value="">Select an airline</option>
+                <option value="AI">Air India</option>
+                <option value="IX">Air India Express</option>
+                <option value="SG">SpiceJet</option>
+                <option value="6E">IndiGo</option>
+                <option value="G8">GoAir</option>
+                <option value="UK">Vistara</option>
+                <option value="9W">Jet Airways</option>
+            </select>
+            <br><br>
+            <center><button class="btn">Reserve Flight</button></center>
+
+        </form>
+    </fieldset>
