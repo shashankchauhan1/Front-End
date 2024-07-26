@@ -1,1 +1,1026 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <script src="https://kit.fontawesome.com/ab09901365.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #efefef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            background-color: blue;
+            justify-content: space-around;
+        }
+
+        .logo {
+            width: 30%;
+            height: 8vh;
+            display: flex;
+            margin-right: 5px;
+            justify-content: end;
+        }
+
+        .logoHead {
+            color: white;
+            text-align: end;
+            font-style: italic;
+        }
+
+        .searchBar {
+            width: 35%;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .searchBar input {
+            border: none;
+            outline: none;
+
+            width: 90%;
+            height: 100%;
+
+        }
+
+        ul {
+            width: 30%;
+            height: 18vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        ul li {
+            list-style: none;
+            color: white;
+            font-size: 13px;
+        }
+
+        .fa-solid {
+            margin-left: 4px;
+        }
+
+        .fa-magnifying-glass {
+            color: blue;
+            font-size: 18px;
+        }
+
+        span {
+            color: gold;
+        }
+
+        .new {
+            background-color: white;
+            display: flex;
+        }
+
+        .newul {
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        .newul li {
+            width: 100%;
+            margin: 10px;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            color: black;
+            margin-left: 1%;
+            margin-right: 1mm;
+        }
+
+        .section1 {
+            border: none;
+            outline: none;
+            margin: 3%;
+            margin-top: 1%;
+            margin-left: 5%;
+            width: 23%;
+            height: 100vh;
+            /* background-color: white; */
+        }
+
+        .name {
+            /* margin-top: 2%; */
+            /* margin-left: 3%; */
+            display: flex;
+            border: none;
+            width: 100%;
+            height: 10vh;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: white;
+            color: rgb(72, 68, 68);
+        }
+
+        .name img {
+            border-radius: 50%;
+            width: 35%;
+            height: 80%;
+        }
+
+        .hello {
+
+            margin-bottom: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+
+        }
+
+        .nm {
+            margin-top: 8%;
+            margin-left: -13%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            color: rgb(61, 60, 60);
+        }
+
+        /* main details box */
+        .details {
+            margin-top: 5%;
+            background-color: white;
+            height: 130vh;
+        }
+
+        /* my order outer box */
+        .myorderouterbox {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            background-color: white;
+            outline: none;
+            width: 100%;
+            height: 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgorder {
+            margin-right: 5%;
+        }
+
+        .myorder {
+            color: grey;
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .myorder:hover {
+            color: blue;
+        }
+
+        .arrow {
+            width: 5%;
+        }
+
+        /* account  */
+
+        .accountouterbox {
+            margin-top: 1%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 100%;
+            outline: none;
+            height: 20%;
+        }
+
+        .account {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+        }
+
+        .accsetimg {
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        .accountsetting {
+            color: grey;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        .accountsetting:hover {
+            color: blue;
+        }
+
+
+        /* profile information */
+
+        .profile {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .profile:hover {
+            color: blue;
+        }
+
+        /* manage address */
+
+        .manageAddress {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .manageAddress:hover {
+            color: blue;
+        }
+
+        /* pan */
+
+        .pan {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .pan:hover {
+            color: blue;
+        }
+
+        /* PAYMENTS */
+        .paymentouterbox {
+            margin-top: 1%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 100%;
+            outline: none;
+            height: 20%;
+        }
+
+        .payment {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+        }
+
+        .payimg {
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        .payments {
+            color: grey;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        .payments:hover {
+            color: blue;
+        }
+
+
+        /* gifts cards */
+
+        .gift {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .gift:hover {
+            color: blue;
+        }
+
+        .gc {
+            width: 60%;
+        }
+
+        /* saved upi */
+
+        .upi {
+            /* border: 1px solid black; */
+            display: flex;
+            /* text-align: center; */
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .upi:hover {
+            color: blue;
+        }
+
+        /* saved cards */
+
+        .cards {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .cards:hover {
+            color: blue;
+        }
+
+        /* my stuff */
+
+        .mystuffouterbox {
+            margin-top: 1%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 100%;
+            outline: none;
+            height: 25%;
+        }
+
+        .mystuff {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+        }
+
+        .stuffimg {
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        .stuffname {
+            color: grey;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        .stuffname:hover {
+            color: blue;
+        }
+
+        /* my coupons */
+        .coupon {
+            /* border: 1px solid black; */
+            display: flex;
+            /* text-align: center; */
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .coupon:hover {
+            color: blue;
+        }
+
+        /* review and rating */
+
+        .review {
+            /* border: 1px solid black; */
+            display: flex;
+            /* text-align: center; */
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .review:hover {
+            color: blue;
+        }
+
+        /* notification */
+
+        .notification {
+            /* border: 1px solid black; */
+            display: flex;
+            /* text-align: center; */
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 100%;
+            height: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .notification:hover {
+            color: blue;
+        }
+
+        /* wishlist */
+
+        .wishlist {
+            /* border: 1px solid black; */
+            display: flex;
+            /* text-align: center; */
+            justify-content: left;
+            text-align: left;
+            margin-left: 25%;
+            align-items: center;
+            color: grey;
+            width: 75%;
+            height: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .wishlist:hover {
+            color: blue;
+        }
+
+        /* logout */
+        .logoutouterbox {
+            margin-top: 1%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 100%;
+            outline: none;
+            height: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lo {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+        }
+
+        .logimg {
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        #li {
+            color: rgb(0, 0, 255);
+        }
+
+        .logname {
+            margin-left: 2%;
+            color: grey;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        .logname:hover {
+            color: blue;
+        }
+
+        /* frequently */
+
+        .freqouterbox {
+            margin-top: 1%;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+            width: 100%;
+            outline: none;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .freqname {
+            margin-bottom: 20%;
+            margin-left: 10%;
+            width: 100%;
+            font-size: 0.9rem;
+            color: black;
+        }
+
+        .track {
+            width: 50%;
+            font-size: 0.9rem;
+            color: grey;
+            margin-top: 10%;
+            margin-left: -100%;
+        }
+
+        .help {
+            margin-top: 10%;
+            margin-left: -20%;
+            width: 50%;
+            font-size: 0.9rem;
+            color: grey;
+        }
+
+        /* section 2 */
+
+        .section2 {
+            /* border: 2px solid black; */
+            background-color: white;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 65%;
+            height: 150vh;
+            margin-top: -53%;
+            margin-left: 30%;
+            /* display: flex; */
+            /* justify-content: left; */
+            text-align: left;
+        }
+
+        /* personal information */
+
+        .personalouterbox {
+            margin-left: 5%;
+            display: flex;
+            height: 5%;
+            /* border: 2px solid black; */
+            width: 100%;
+            clear: right;
+        }
+
+        .pi {
+            width: 30vh;
+            color: rgb(58, 57, 57);
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .editinfo {
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            margin-top: 5%;
+        }
+
+        /*personal information inputs */
+
+        .inputouterbox {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            margin-left: -14%;
+        }
+
+        .input1 input {
+            width: 150%;
+            height: 7vh;
+            margin-left: -60%;
+        }
+
+        .input2 input {
+            width: 150%;
+            height: 7vh;
+            margin-left: 0%;
+        }
+
+        /* gender */
+
+        .genderouterbox {
+            width: 100%;
+            height: 5%;
+            /* display: flex; */
+            /* justify-content: left; */
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+
+        #male {
+            margin-right: 5%;
+        }
+
+        /* Email */
+
+        .emailouterbox {
+            margin-left: 5%;
+            display: flex;
+            height: 5%;
+            width: 100%;
+            clear: right;
+        }
+
+        .em {
+            width: 30vh;
+            color: rgb(58, 57, 57);
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .editemail {
+            margin-left: -5%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            margin-top: 5%;
+        }
+
+        /* email input */
+
+        .inputouterboxem {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .input3 input {
+            width: 150%;
+            height: 7vh;
+        }
+
+        /* mobile number */
+
+        .mobileouterbox {
+            margin-top: -3%;
+            margin-left: 5%;
+            display: flex;
+            height: 5%;
+            width: 100%;
+            clear: right;
+        }
+
+        .mn {
+            width: 30vh;
+            color: rgb(58, 57, 57);
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .editphone {
+            margin-left: -5%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            margin-top: 5%;
+        }
+
+        /* mobile input */
+
+        .inputouterboxmn {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .input4 input {
+            width: 150%;
+            height: 7vh;
+        }
+
+        /* FAQs */
+
+        .faq {
+            width: 90%;
+            height: 5%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        /* deactivate */
+        .deactivate {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .delete {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logoHead">
+                <h2>Flipkart</h2>
+                <h3><span>Plus</span></h3>
+            </div>
+        </div>
+
+        <div class="searchBar">
+            <input type="search" placeholder="Search for Brands and Products">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <ul>
+            <li>Shashank <i class="fa-solid fa-angle-down"></i> </li>
+            <li>Become a Seller</li>
+            <li>More <i class="fa-solid fa-angle-down"></i></li>
+            <li>Cart <i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+    </nav>
+    <nav class="new">
+        <ul class="newul">
+            <li>Electronics<i class="fa-solid fa-angle-down"></i></li>
+            <li>Appliances<i class="fa-solid fa-angle-down"></i></li>
+            <li>Men<i class="fa-solid fa-angle-down"></i></li>
+            <li>Women<i class="fa-solid fa-angle-down"></i></li>
+            <li>Kids<i class="fa-solid fa-angle-down"></i></li>
+            <li>Home<i class="fa-solid fa-angle-down"></i></li>
+            <li>Sports<i class="fa-solid fa-angle-down"></i></li>
+            <li>Flight<i class="fa-solid fa-angle-down"></i></li>
+            <li>Offer Zone<i class="fa-solid fa-angle-down"></i></li>
+            <li>Grocery<i class="fa-solid fa-angle-down"></i></li>
+
+        </ul>
+    </nav>
+
+    <div class="section1">
+
+        <div class="name">
+            <img class="img"
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/profile-pic-male_4811a1.svg">
+            <div class="hello">Hello,</div>
+            <div class="nm"><b>Shashank Chauhan</b></div>
+        </div>
+
+        <div class="details">
+            <!-- my order -->
+            <div class="myorderouterbox">
+                <div class="imgorder">
+                    <img id="omg"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjY5NCAtMTEpIj48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyODc0RjEiIGQ9Ik05IDExdjE3LjEwOGMwIC40OTMuNDEuODkyLjkxOC44OTJoNC45M3YtNS4yNTdoLTMuMDMzbDQuOTEyLTQuNzcgNC45NzIgNC44M2gtMy4wMzVWMjloMTIuNDE3Yy41MDcgMCAuOTE4LS40LjkxOC0uODkyVjExSDl6Ii8+PC9nPjwvc3ZnPg=="
+                        alt="">
+                </div>
+                <div class="myorder"><b>MY ORDERS</b></div>
+                <div class="arrow"><i class="fa-solid fa-greater-than"></i></div>
+            </div>
+
+            <!-- account -->
+
+            <div class="accountouterbox">
+                <div class="account">
+                    <div class="accsetimg">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIyIDIxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtMTApIj48cGF0aCBmaWxsPSIjMjg3NEYwIiBkPSJNMTQuMjc1IDIyLjcwNGMyLjI3Mi0uNDEyIDQuMzQ3LS42MTggNi4yMjUtLjYxOCAxLjg3OCAwIDMuOTUzLjIwNiA2LjIyNS42MThhNS4xNSA1LjE1IDAgMCAxIDQuMjMgNS4wNjhWMzFoLTIwLjkxdi0zLjIyOGE1LjE1IDUuMTUgMCAwIDEgNC4yMy01LjA2OHptMS4yNzQtNy43MjRjMC0yLjU4IDIuMTYzLTQuNjczIDQuODMyLTQuNjczIDIuNjY3IDAgNC44MyAyLjA5MiA0LjgzIDQuNjczIDAgMi41OC0yLjE2MyA0LjY3My00LjgzIDQuNjczLTIuNjcgMC00LjgzMy0yLjA5Mi00LjgzMy00LjY3M3oiLz48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjwvZz48L3N2Zz4="
+                            alt="" id="accset">
+                    </div>
+                    <div class="accountsetting"><b>ACCOUNT SETTINGS</b></div>
+                </div>
+
+                <!-- profile information -->
+
+                <div class="profile">
+                    Profile Information
+                </div>
+
+                <!-- manage addresses -->
+
+                <div class="manageAddress">
+                    Manage Addresses
+                </div>
+
+                <!-- PAN Card information -->
+
+                <div class="pan">
+                    PAN Card Information
+                </div>
+            </div>
+            <!-- payments -->
+
+            <div class="paymentouterbox">
+                <div class="payment">
+                    <div class="payimg">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIzIDIyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtOSkiPjxlbGxpcHNlIGN4PSIyMC41NTciIGN5PSIyMCIgcng9IjIwLjU1NyIgcnk9IjIwIi8+PHBhdGggZD0iTTcgNmgyOHYyOEg3eiIvPjxwYXRoIGZpbGw9IiMyODc0RjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTMxLjUgMjd2MS4xNjdhMi4zNCAyLjM0IDAgMCAxLTIuMzMzIDIuMzMzSDEyLjgzM2EyLjMzMyAyLjMzMyAwIDAgMS0yLjMzMy0yLjMzM1YxMS44MzNBMi4zMzMgMi4zMzMgMCAwIDEgMTIuODMzIDkuNWgxNi4zMzRhMi4zNCAyLjM0IDAgMCAxIDIuMzMzIDIuMzMzVjEzSDIxYTIuMzMzIDIuMzMzIDAgMCAwLTIuMzMzIDIuMzMzdjkuMzM0QTIuMzMzIDIuMzMzIDAgMCAwIDIxIDI3aDEwLjV6TTIxIDI0LjY2N2gxMS42Njd2LTkuMzM0SDIxdjkuMzM0em00LjY2Ny0yLjkxN2MtLjk3IDAtMS43NS0uNzgyLTEuNzUtMS43NXMuNzgtMS43NSAxLjc1LTEuNzVjLjk2OCAwIDEuNzUuNzgyIDEuNzUgMS43NXMtLjc4MiAxLjc1LTEuNzUgMS43NXoiLz48L2c+PC9zdmc+">
+                    </div>
+                    <div class="payments"><b>PAYMENTS</b></div>
+                </div>
+
+                <!-- gifts cards -->
+
+                <div class="gift">
+                    <div class="gc">Gift Cards</div>
+                    <div class="rs"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div>
+
+                <!-- saved upi -->
+
+                <div class="upi">
+                    Saved UPI
+                </div>
+
+                <!-- saved cards -->
+
+                <div class="cards">
+                    Saved Cards
+                </div>
+
+            </div>
+
+            <!-- my stuff -->
+            <div class="mystuffouterbox">
+                <div class="mystuff">
+                    <div class="stuffimg">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIzIDIyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtOSkiPjxlbGxpcHNlIGN4PSIyMC41NTciIGN5PSIyMCIgcng9IjIwLjU1NyIgcnk9IjIwIi8+PHBhdGggZD0iTTcgNmgyOHYyOEg3eiIvPjxwYXRoIGZpbGw9IiMyODc0RjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTMxLjUgMjd2MS4xNjdhMi4zNCAyLjM0IDAgMCAxLTIuMzMzIDIuMzMzSDEyLjgzM2EyLjMzMyAyLjMzMyAwIDAgMS0yLjMzMy0yLjMzM1YxMS44MzNBMi4zMzMgMi4zMzMgMCAwIDEgMTIuODMzIDkuNWgxNi4zMzRhMi4zNCAyLjM0IDAgMCAxIDIuMzMzIDIuMzMzVjEzSDIxYTIuMzMzIDIuMzMzIDAgMCAwLTIuMzMzIDIuMzMzdjkuMzM0QTIuMzMzIDIuMzMzIDAgMCAwIDIxIDI3aDEwLjV6TTIxIDI0LjY2N2gxMS42Njd2LTkuMzM0SDIxdjkuMzM0em00LjY2Ny0yLjkxN2MtLjk3IDAtMS43NS0uNzgyLTEuNzUtMS43NXMuNzgtMS43NSAxLjc1LTEuNzVjLjk2OCAwIDEuNzUuNzgyIDEuNzUgMS43NXMtLjc4MiAxLjc1LTEuNzUgMS43NXoiLz48L2c+PC9zdmc+">
+                    </div>
+                    <div class="stuffname"><b>MY STUFF</b></div>
+                </div>
+                <!-- my coupons -->
+
+                <div class="coupon">
+                    My Coupons
+                </div>
+
+                <!-- review , rating -->
+
+                <div class="review">
+                    My Reviews & Rating
+                </div>
+
+                <!-- all notification -->
+                <div class="notification">
+                    All Notification
+                </div>
+
+                <!-- wishlist -->
+                <div class="wishlist">
+                    My Wishlist
+                </div>
+            </div>
+            <!-- logout -->
+            <div class="logoutouterbox">
+                <div class="lo">
+                    <div class="logimg"><i id="li" class="fa-solid fa-power-off"></i></div>
+                    <div class="logname"><b>Logout</b></div>
+                </div>
+            </div>
+
+            <!-- frequently asked -->
+
+            <div class="freqouterbox">
+                <div class="freqname">Frequently Visited: </div>
+                <div class="track"><a href="">Track Order</a></div>
+                <div class="help"><a href="">Help Center</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 2 -->
+    <div class="section2">
+
+        <div class="personalouterbox">
+            <div class="pi"><b>Personal Information</b></div>
+            <div class="editinfo">Edit</div>
+        </div>
+
+        <!-- personal information inputs -->
+
+        <div class="inputouterbox">
+            <div class="input1"><input type="text" placeholder="Shashank"></div>
+            <div class="input2"><input type="text" placeholder="Chauhan"></div>
+        </div>
+
+        <!-- gender -->
+        <div class="genderouterbox">
+            <label for="gender">Your Gender</label><br><br>
+
+            <input type="radio" id="gender">
+            <label id="male" for="gender">Male</label>
+
+            <input type="radio" id="gender">
+            <label id="female" for="gender">Female</label>
+        </div>
+
+        <!-- Email -->
+
+        <div class="emailouterbox">
+            <div class="em"><b>Email Address</b></div>
+            <div class="editemail">Edit</div>
+        </div>
+
+        <!-- email input  -->
+        <div class="inputouterboxem">
+            <div class="input3"><input type="text" placeholder="shashankchauhan134@gmail.com"></div>
+        </div>
+
+
+        <!-- mobile number -->
+
+        <div class="mobileouterbox">
+            <div class="mn"><b>Mobile Number</b></div>
+            <div class="editphone">Edit</div>
+        </div>
+
+        <!-- email input  -->
+        <div class="inputouterboxmn">
+            <div class="input4"><input type="text" placeholder="+91 9015159394"></div>
+        </div>
+
+        <!-- faq -->
+
+        <div class="faq">
+            <h3>FAQs</h4><br>
+                <h4>What happens when I update my email address (or mobile number)?
+            </h3><br>
+            <h5>Your login email id (or mobile number) changes, likewise. You'll receive all your account related
+                communication on your updated email address (or mobile number).</h5><br>
+            <h4>When will my Flipkart account be updated with the new email address (or mobile number)?</h4><br>
+            <h5>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the
+                changes.</h5><br>
+            <h4>What happens to my existing Flipkart account when I update my email address (or mobile number)?</h4><br>
+            <h5>Updating your email address (or mobile number) doesn't invalidate your account. Your account remains
+                fully functional. You'll continue seeing your Order history, saved information and personal details.
+            </h5><br>
+            <h4>Does my Seller account get affected when I update my email address?</h4><br>
+            <h5>Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.</h5><br>
+            <br>
+            <br>
+            <div class="deactivate">
+                Deactivate Account
+            </div>
+            <br>
+            <div class="delete">
+                Delete Account
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
