@@ -1,0 +1,82 @@
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(210, 210, 210), rgb(31, 29, 29));
+        }
+
+        .navbar {
+            background-image: linear-gradient(to right, rgb(36, 37, 39), rgb(222, 222, 222));
+            /* background: transparent; */
+        }
+
+        /* bently continental gt */
+
+        .bently  {
+            filter: drop-shadow(1px 1px 1px rgb(197, 171, 171));
+            height: 90%;
+            width: 100%;
+            animation-name: bently;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+        }
+
+        @keyframes bently {
+            0% {
+                position: relative;
+                left: 15%;
+            }
+
+            100% {
+                position: relative;
+                left: 0%;
+            }
+        }
+
+        .name {
+            font-family: "Matemasie", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            animation-name: name;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes name {
+            0% {
+                position: relative;
+                top: -10%;
+            }
+
+            100% {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        .price {
+            font-family: "Grey Qo", cursive;
+            font-weight: 400;
+            font-style: normal;
+            animation: price 2s ease-in-out 1;
+        }
+
+        @keyframes price {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        
+    </style>
