@@ -1,0 +1,56 @@
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.pngmart.com/files/22/Bentley-Logo-PNG-Image.png" alt="Logo" width="120"
+                    height="40" class="d-inline-block align-text-center">
+                <strong class="ms-3 text-white">BENTLY</strong>
+            </a>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-black" aria-current="page" href="#"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">
+                        <b>Contact</b>
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="btn btn-outline-secondary" type="submit"><b>Book Now</b></button>
+        </div>
+    </nav><br><br>
+    <!-- image -->
+
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-4 text-black"><br><br>
+                <h1 class="name">Bently</h1>
+                <h1 class="name">Continental GT </h1>
+                <br>
+                <h4 class="price">Starts from : 3.29 Cr - 7.28 Cr</h4><br><br>
+            </div>
+
+            <div class="col-8">
+                <img class="bently"
+                    src="https://st.automobilemag.com/uploads/sites/10/2017/05/2017-bentley-continental-gt-coupe-side-view.png"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
