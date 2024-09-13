@@ -1,0 +1,33 @@
+// CSS 
+
+        body {
+            background-color: black;
+        }
+
+        .mainCont {
+            width: 40%;
+            box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+            margin-top: 5%;
+            border-radius: 20px;
+        }
+
+        .fa-regular {
+            color: white;
+            background-color: white;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .name {
+            font-family: "Matemasie", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        li {
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 400;
+            font-style: normal;
+        }
