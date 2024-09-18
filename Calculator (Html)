@@ -1,0 +1,20 @@
+// working calculator html
+
+
+<button class="btn btn-primary theme" onclick="changeTheme()">Theme</button>
+    <div class="container text-center text-warning mt-5">
+        <h1 class="name">To-Do List</h1>
+    </div>
+
+    <div class="mainCont container text-warning" style="border: 2px solid white;">
+        <div class="row mt-1">
+            <!-- input tag -->
+            <div class="col-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input" placeholder="Enter Task To Be Added"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button class="btn btn-warning add" style="font-family:Protest Guerrilla sans-serif;">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
